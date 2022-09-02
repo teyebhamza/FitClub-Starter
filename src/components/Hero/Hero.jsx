@@ -1,16 +1,30 @@
 import React from 'react'
 import './Hero.css'
-import Header from '../Header/Header';
+import Header from '../Header/Header'
 import heart from '../../assets/m2.png'
+import NumberCounter from 'number-counter'
+
+import {motion} from 'framer-motion'
+
 
 const Hero = () => {
+  const transition = {type: 'spring', duration: 3}
+  const mobile = window.innerWidth<=768 ? true: false;
   return (
-    <div className="hero">
+    <div className="hero" id="Home">
+
+        <div className="blur hero-blur"></div>
         <div className="left-h">
         <Header/>
 
           <div className="the-best-ad">
-            <div></div>
+           
+            <motion.div
+            initial={{left: mobile? '135px': '178px'}}
+            whileInView= {{left: '8px'}}
+            transition={{...transition, type: 'tween'}}
+            ></motion.div>
+           
             <span>Agence Ddigital Marketing</span>
           </div>
 
@@ -30,15 +44,21 @@ const Hero = () => {
           {/* Figures*/}
           <div className="figures">
             <div>
-              <span>+ 1M </span>
+              <span>
+                 <NumberCounter end={999}  start={900} delay='4' preFix='+' /> 
+                 </span>
               <span> Vues </span>
             </div>
             <div>
-              <span> + 200K </span>
-              <span> hours  </span>
+              <span> 
+              <NumberCounter end={300}  start={250} delay='4' preFix='+' />
+                 </span>
+              <span>Work hours  </span>
             </div>
             <div>
-              <span> + 10 </span>
+              <span> 
+              <NumberCounter end={30}  start={15} delay='4' preFix='+' />
+                 </span>
               <span> Clients </span>
             </div>
           </div>
@@ -52,10 +72,7 @@ const Hero = () => {
         <div className="right-h">
         <button className="btn">Join Now</button>
 
-          <div className="heart-rate">
-            <img src={heart}  alt="" className="mlogo"/>
-            <span></span>
-          </div>
+         
         </div>
         
     </div>

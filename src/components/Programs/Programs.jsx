@@ -6,14 +6,15 @@ import { programsData } from '../../data/programsData';
 
 const Programs = () => {
  return(
-     <div className="programs" id="programs">
+     <div className="programs" id="Programs">
         <div className="programs-header">
+            <div className="blur blur-p"></div>
             <span>Digital marketing</span>
             <span> Web Developement</span>
             <span>Graphic Designer</span>
             
         </div>
-
+        
             
         <div className="programs-categories">
             {programsData.map((program) =>(
@@ -24,6 +25,7 @@ const Programs = () => {
                 </div>
             ))}
         </div>
+        <div className="blur blur-p2"></div>
      </div> 
   )
 }

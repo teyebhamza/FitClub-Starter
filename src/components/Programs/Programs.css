@@ -55,3 +55,28 @@
     background:var(--planCard);
     cursor: pointer;
 }
+.blur-p{
+    width:22rem;
+    height:30rem;
+    left:0;
+}
+.blur-p2{
+    width:22rem;
+    height:30rem;
+    right:0;
+}
+
+@media screen and (max-width:768px){
+    .programs-header{
+       flex-direction: column;
+       gap:1rem;
+       font-size: x-large;
+       align-items:center;
+       justify-content:center;
+       margin-top: 2rem; 
+    }
+
+    .programs-categories{
+        flex-direction: column;
+    }
+}
