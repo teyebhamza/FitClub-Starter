@@ -159,14 +159,22 @@
     .hero-buttons{
         justify-content:center;
     }
+    .figures{
+        justify-content:center;
+    }
     .figures>div>span:nth-child(1){
         font-size:large;
+        
+
 
     }
     .figures>div>span:nth-child(2){
         font-size:small;
+        
     }
-    .right-r{
-        position:relative;
+    .right-h>button{
+        display:none;
     }
+    
+   
 }

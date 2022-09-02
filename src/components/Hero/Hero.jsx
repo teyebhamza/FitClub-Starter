@@ -70,9 +70,7 @@ const Hero = () => {
           
      </div>
         <div className="right-h">
-        <button className="btn">Join Now</button>
-
-         
+        <button className="btn">Contact Us</button>
         </div>
         
     </div>

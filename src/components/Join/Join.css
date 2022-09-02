@@ -23,8 +23,9 @@
 .email-container{
     display:flex;
     gap: 3rem;
-    background-color:rgb(238, 197, 170);
+    background-color:rgb(243, 126, 48);
     padding:1rem 2rem;
+    border-radius:10px;
 }
 .email-container>input{
     background-color:transparent;
@@ -38,6 +39,7 @@
 .btn-j{
    background-color: var(--gray);
    color:white;
+   border-radius:10px;
 }
 
 
@@ -49,8 +51,12 @@
     .left-j{
         font-size:x-large;
         flex-direction: column;
+        
     }
     .right-j{
         padding: 2rem;
+    }
+    .left-j>div{
+        justify-content:center;
     }
 }
