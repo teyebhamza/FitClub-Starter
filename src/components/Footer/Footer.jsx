@@ -11,16 +11,24 @@ const Footer = () => {
       <hr/> 
       <div className="footer">
          <div className="social-links">
-            <img src={Github} alt=""/> 
-            <img src={Instagram} alt=""/> 
-            <img src={LinkedIn} alt=""/> 
+            
+            <a alt="instagram" href="https://www.instagram.com/mogaprod.agency/"> <img src={Instagram} alt=""/></a>
+            <a alt="instagram" href="https://www.instagram.com/mogaprod.agency/"> <img src={LinkedIn} alt=""/></a>
+            <a alt="instagram" href="https://www.instagram.com/mogaprod.agency/"> <img src={Github} alt=""/></a>
+           
          </div>
           <div className="logo-f">
             <img src={Logo} alt=""/> 
           </div>
+          <div className="footer-text">
+       
+        <span>Created by <span style={{color: 'var(--orange)'}}>Moga Prod</span> @All Rights Reserved</span>
+        </div>
           <div className="blur blur-f-1"></div>
           <div className="blur blur-f-2"></div>
       </div>
+      
+     
     </div>
   )
 }
