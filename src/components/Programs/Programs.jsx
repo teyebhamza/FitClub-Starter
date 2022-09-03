@@ -9,17 +9,14 @@ const Programs = () => {
      <div className="programs" id="Programs">
         <div className="programs-header">
             <div className="blur blur-p"></div>
-            <span>Digital marketing</span>
-            <span> Web Developement</span>
-            <span>Graphic Designer</span>
-            
+            <span >Our Servises</span>  
         </div>
         
             
         <div className="programs-categories">
             {programsData.map((program) =>(
                 <div className="category">
-                    {program.image} 
+                    <img src={program.image} alt=""/> 
                     <span> {program.heading}<span></span>{program.details} </span>
                     <div className="join-now"><span>Join Now</span></div>
                 </div>

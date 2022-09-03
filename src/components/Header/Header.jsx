@@ -33,8 +33,8 @@ const Header = () => {
        onClick={()=>setMenuOpened(false)}
        activeClassName="active"
        to='Home'
-    span={true}
-    smooth={true}
+       span={true}
+       smooth={true}
       >Home</Link>
     </li>
 
@@ -55,8 +55,9 @@ const Header = () => {
       >Why us</Link>
       </li>
     <li onClick={()=>setMenuOpened(false)}>Plans</li>
-    <li onClick={()=>setMenuOpened(false)}>
+    <li >
     <Link
+    onClick={()=>setMenuOpened(false)}
     to='Testimonials'
     span={true}
     smooth={true}

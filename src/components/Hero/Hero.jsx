@@ -45,13 +45,13 @@ const Hero = () => {
           <div className="figures">
             <div>
               <span>
-                 <NumberCounter end={999}  start={900} delay='4' preFix='+' /> 
+                 <NumberCounter end={9999}  start={1000} delay='4' preFix='+' /> 
                  </span>
               <span> Vues </span>
             </div>
             <div>
               <span> 
-              <NumberCounter end={300}  start={250} delay='4' preFix='+' />
+              <NumberCounter end={500}  start={400} delay='4' preFix='+' />
                  </span>
               <span>Work hours  </span>
             </div>
